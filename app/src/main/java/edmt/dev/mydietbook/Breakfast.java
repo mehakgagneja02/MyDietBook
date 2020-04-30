@@ -110,6 +110,4 @@ public class Breakfast extends Fragment {
         Db db=new Db(id,date,text);
         mDatabaseReference.child(text).setValue(db);
     }
-
-
 }
