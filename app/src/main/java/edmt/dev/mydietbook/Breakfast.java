@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -111,16 +109,15 @@ public class Breakfast extends Fragment {
         String text = bcal.getText().toString();
         Db db=new Db(id,date,text);
         mDatabaseReference.child(text).setValue(db);
-
     }
-    private boolean updateDb(String id, String date, String text) {
+    private boolean updateArtist(String id, String name, String genre) {
         //getting the specified artist reference
         DatabaseReference dR = FirebaseDatabase.getInstance().getReference("artists").child(id);
 
         //updating artist
-        Db artist = new Db(id, date,text);
+        Db artist = new Artist(id, name, genre);
         dR.setValue(artist);
-        Toast.makeText(getActivity(), "Artist Updated", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Artist Updated", Toast.LENGTH_LONG).show();
         return true;
     }
 
