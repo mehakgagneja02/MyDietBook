@@ -14,8 +14,8 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="250dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="@+id/txtpass"
-            app:layout_constraintTop_toBottomOf="@+id/txtpass">
+            app:layout_constraintTop_toBottomOf="@+id/txtpass"
+            >
 
 
             <EditText
@@ -53,7 +54,7 @@
                 android:backgroundTint="#203288"
                 android:ems="10"
                 android:hint="Password"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 android:textColor="#203288"
                 android:textColorHighlight="#203288"
                 android:textColorHint="#0297EB"
