@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgndd"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="284dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="14dp"
+        android:text="What's your name?"
+        android:textColor="#203288"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#203288"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtwelcome" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="#203288"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#203288"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#0297EB"
+        app:layout_constraintBottom_toTopOf="@+id/txtdate"
+        app:layout_constraintStart_toStartOf="@+id/txtname"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+    <Button
+        android:id="@+id/btnname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+
+        android:layout_marginBottom="195dp"
+        android:background="@drawable/buttonrounded"
+        android:text="Continue"
+        android:textColor="#203288"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#203288"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btndate"
+        app:layout_constraintTop_toBottomOf="@+id/btndate" />
+
+    <Button
+        android:id="@+id/btndate"
+        android:layout_width="126dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/buttonrounded"
+        android:text="Pick a date"
+        android:textColor="#203288"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#203288"
+        app:layout_constraintBottom_toTopOf="@+id/btnname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdate" />
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="77dp"
+        android:text="Welcome!"
+        android:textColor="#203288"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#203288"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtname"
+        app:layout_constraintEnd_toEndOf="@+id/txtname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="151dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="20dp"
+        android:text="Date"
+        android:textColor="#203288"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#0297EB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btndate"
+        app:layout_constraintEnd_toEndOf="@+id/btndate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btndate"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

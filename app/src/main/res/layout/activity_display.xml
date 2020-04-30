@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgndd"
+    tools:context=".Display">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="83dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginBottom="16dp"
+        android:text="Hello,"
+        android:textColor="#203288"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#203288"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="215dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:text="name"
+        android:visibility="invisible"
+        android:textColor="#203288"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#203288"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv3"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="You selected the date :"
+        android:textColor="#203288"
+        android:visibility="invisible"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#203288"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv4"
+        app:layout_constraintStart_toStartOf="@+id/tv2"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="158dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="269dp"
+        android:text="date"
+        android:textColor="#203288"
+        android:textColorHighlight="#203288"
+        android:textColorHint="#203288"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btncontinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonrounded"
+            android:text="Continue"
+            android:visibility="invisible"
+            android:textColor="#203288"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="500dp"
+            android:textColorHighlight="#203288"
+            android:textColorHint="#203288"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="302dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

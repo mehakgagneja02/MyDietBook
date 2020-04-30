@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "452343633157",
+    "firebase_url": "https://mydietbook-8eb94.firebaseio.com",
+    "project_id": "mydietbook-8eb94",
+    "storage_bucket": "mydietbook-8eb94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452343633157:android:3118cdd3a7a146f9bfd36c",
+        "android_client_info": {
+          "package_name": "edmt.dev.mydietbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452343633157-5ql8pdc70eesgr1r2i6ddci16v22pj93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edmt.dev.mydietbook",
+            "certificate_hash": "813c4a7a4c000854401bbd735d7f0c45758b0664"
+          }
+        },
+        {
+          "client_id": "452343633157-m514ahpuklm5hhm6dk721b155eu1mpj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPwh9nUMRg2AndK0l-Qpq5NLsrCXLRx8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452343633157-m514ahpuklm5hhm6dk721b155eu1mpj8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

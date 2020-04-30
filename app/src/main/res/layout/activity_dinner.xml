@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dinner">
+
+    <Button
+        android:id="@+id/dbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/buttonrounded"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/dbutton"
+        app:layout_constraintEnd_toEndOf="@+id/dbutton" />
+
+    <EditText
+        android:id="@+id/dinnertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FF00458B"
+        android:ems="10"
+        android:hint="Food item"
+        android:inputType="text"
+        android:textColor="#FF00458B"
+        android:textColorHighlight="#FF00458B"
+        android:textColorHint="#0297EB"
+        app:layout_constraintBottom_toTopOf="@+id/dcalories"
+        app:layout_constraintStart_toStartOf="@+id/dcalories" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="119dp"
+        android:layout_marginBottom="119dp"
+        android:textColor="#203288"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/dlist"
+            android:layout_width="wrap_content"
+            android:layout_height="465dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="144dp"
+            android:textColor="#FF00458B"
+            android:textColorHighlight="#FF00458B"
+            android:textColorHint="#0297EB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dinner"
+            app:layout_constraintVertical_bias="0.171" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dinner"
+        android:layout_width="416dp"
+        android:layout_height="109dp"
+        android:background="#172470"
+        android:text="  Dinner"
+        android:textAlignment="gravity"
+        android:textColor="#0297EB"
+        android:textColorHighlight="#0297EB"
+        android:textColorHint="#0297EB"
+        android:textColorLink="#0297EB"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dcal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dcal" />
+
+    <EditText
+        android:id="@+id/dcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="13dp"
+        android:backgroundTint="#FF00458B"
+        android:ems="10"
+        android:hint="Total calorie"
+        android:inputType="number"
+        android:textColor="#FF00458B"
+        android:textColorHighlight="#FF00458B"
+        android:textColorHint="#0297EB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dbutton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonrounded"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dcalories" />
+
+    <TextView
+        android:id="@+id/dcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="3dp"
+        android:text="               "
+        android:textAlignment="gravity"
+        android:textColor="#0297EB"
+        android:textColorHighlight="#0297EB"
+        android:textColorHint="#0297EB"
+        android:textColorLink="#0297EB"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/historydinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Tap for History"
+        android:textAlignment="gravity"
+        android:textColor="#0297EB"
+        android:textColorHighlight="#0297EB"
+        android:textColorHint="#0297EB"
+        android:textColorLink="#0297EB"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dinner"
+        app:layout_constraintStart_toStartOf="@+id/dinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
