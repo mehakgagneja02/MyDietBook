@@ -110,15 +110,6 @@ public class Breakfast extends Fragment {
         Db db=new Db(id,date,text);
         mDatabaseReference.child(text).setValue(db);
     }
-    private boolean updateArtist(String id, String name, String genre) {
-        //getting the specified artist reference
-        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("artists").child(id);
 
-        //updating artist
-        Db artist = new Artist(id, name, genre);
-        dR.setValue(artist);
-        Toast.makeText(getApplicationContext(), "Artist Updated", Toast.LENGTH_LONG).show();
-        return true;
-    }
 
 }
