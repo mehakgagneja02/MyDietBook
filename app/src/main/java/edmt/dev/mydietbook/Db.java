@@ -21,7 +21,9 @@ public class Db {
     public String getdbdate(){
         return dbdate;
     }
-    public String getdbtext(){return dbtext;}
+    public String getdbtext() {
+        return dbtext;
+    }
 
 }
 
