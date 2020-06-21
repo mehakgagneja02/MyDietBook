@@ -35,6 +35,8 @@ public class Profile extends AppCompatActivity {
         txtwelcome=findViewById(R.id.txtwelcome);
         name=findViewById(R.id.name);
         btnname=findViewById(R.id.btnname);
+        btndate=findViewById(R.id.btndate);
+        txtdate=findViewById(R.id.txtdate);
 
 
         btndate.setOnClickListener(new View.OnClickListener() {
@@ -64,11 +66,15 @@ public class Profile extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(),Display.class);
                 startActivity(i);
                 String strname = name.getText().toString();
+                String strdate = txtdate.getText().toString();
                 SharedPreferences sharedPreferences = getSharedPreferences("Name_info",0);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("Name",strname);
                 editor.commit();
-
+                SharedPreferences sharedPreferences1 = getSharedPreferences("Date_info",0);
+                SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                editor1.putString("Date",strdate);
+                editor1.commit();
             }
         });
     }
