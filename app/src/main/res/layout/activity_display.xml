@@ -12,8 +12,8 @@
         android:layout_width="83dp"
         android:layout_height="0dp"
         android:layout_marginStart="43dp"
-        android:layout_marginTop="224dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginBottom="25dp"
         android:text="Hello,"
         android:textColor="#203288"
         android:textColorHighlight="#203288"
@@ -29,7 +29,7 @@
         android:id="@+id/tv2"
         android:layout_width="215dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="32dp"
         android:text="name"
         android:textColor="#203288"
         android:textColorHighlight="#203288"
@@ -45,24 +45,9 @@
         android:id="@+id/tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="21dp"
-        android:text="You selected the date :"
-        android:textColor="#203288"
-        android:textColorHighlight="#203288"
-        android:textColorHint="#203288"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/tv4"
-        app:layout_constraintStart_toStartOf="@+id/tv2"
-        app:layout_constraintTop_toBottomOf="@+id/tv2" />
-
-    <TextView
-        android:id="@+id/tv4"
-        android:layout_width="158dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
-        android:text="date"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="58dp"
+        android:text="Click to continue "
         android:textColor="#203288"
         android:textColorHighlight="#203288"
         android:textColorHint="#203288"
@@ -70,14 +55,15 @@
         android:textStyle="bold"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/btncontinue"
-        app:layout_constraintStart_toStartOf="@+id/tv3"
-        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
 
     <Button
         android:id="@+id/btncontinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="197dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="255dp"
         android:background="@drawable/buttonrounded"
         android:text="Continue"
         android:textColor="#203288"
@@ -85,7 +71,7 @@
         android:textColorHint="#203288"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv4"
-        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
