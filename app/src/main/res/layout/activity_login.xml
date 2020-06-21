@@ -71,6 +71,7 @@
                 android:textColor="#203288"
                 android:textColorHighlight="#203288"
                 android:textColorHint="#203288"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,6 +86,7 @@
                 android:textColor="#203288"
                 android:textColorHighlight="#203288"
                 android:textColorHint="#203288"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lemail" />
 
@@ -99,6 +101,7 @@
                 android:textColor="#203288"
                 android:textColorHighlight="#203288"
                 android:textColorHint="#203288"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/lpassword"
                 app:layout_constraintTop_toBottomOf="@+id/lpassword" />
 
